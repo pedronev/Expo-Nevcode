@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" width="88" height="88" fill="none" role="img" aria-label="NevCode Assistant">
+  <!--
+    Variación A de la guía de identidad. Este archivo solo se usa donde no
+    puede haber React (favicon, metadatos, structured data); dentro de la app
+    se usa app/components/ui/nevcode-logo.tsx, que sí sigue el tema elegido.
+    Aquí el trazo se adapta con prefers-color-scheme, que es lo único
+    disponible para un SVG servido como imagen.
+  -->
+  <style>
+    .stroke { stroke: #1C1A17; }
+    .fill   { fill:   #1C1A17; }
+    @media (prefers-color-scheme: dark) {
+      .stroke { stroke: #F6F3EE; }
+      .fill   { fill:   #F6F3EE; }
+    }
+  </style>
+  <mask id="cut">
+    <rect width="88" height="88" fill="white"/>
+    <circle cx="58" cy="46" r="29" fill="black"/>
+  </mask>
+  <g mask="url(#cut)">
+    <rect class="stroke" x="6" y="10" width="52" height="42" rx="10" fill="none" stroke-width="5"/>
+    <path class="fill" d="M20 52 L20 66 L34 52 Z"/>
+  </g>
+  <circle class="stroke" cx="58" cy="46" r="24" fill="none" stroke-width="5"/>
+  <path d="M47 46 L54.5 53.5 L70 37" stroke="#C1502E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
